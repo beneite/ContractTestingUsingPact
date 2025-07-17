@@ -2,6 +2,7 @@ package com.rahulshettyacademy.controller;
 
 import java.util.List;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rahulshettyacademy.repository.LibraryRepository;
 import com.rahulshettyacademy.service.LibraryService;
 
-
+@Tag(
+		name = "Library API's",
+		description = "We have the following API: Create user, update user, delete user, read user details"
+)
 @RestController
 public class LibraryController {
 
