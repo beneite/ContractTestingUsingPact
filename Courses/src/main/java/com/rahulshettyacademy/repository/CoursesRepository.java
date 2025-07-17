@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.rahulshettyacademy.controller.AllCourseData;
 
-@Repository
 public interface CoursesRepository extends JpaRepository<AllCourseData, String>{
 
 }

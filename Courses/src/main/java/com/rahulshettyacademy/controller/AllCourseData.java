@@ -1,12 +1,13 @@
 package com.rahulshettyacademy.controller;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Storage2")
+@Table(name="course")
 public class AllCourseData {
     @Column(name="course_name")
 	private String course_name;
