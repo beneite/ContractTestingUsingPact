@@ -1,4 +1,4 @@
-package com.rahulshettyacademy.controller;
+package com.rahulshettyacademy.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="storage")
-public class Library {
+public class LibraryEntity {
     @Column(name="book_name")
 	private String book_name;
     @Id

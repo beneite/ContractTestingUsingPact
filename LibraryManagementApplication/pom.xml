@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.rahulshettyacademy</groupId>
-    <artifactId>SpringBootRestService</artifactId>
+    <artifactId>LibraryManagementApplication</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBootRestService</name>
-    <description>Demo project for Spring Boot</description>
+    <name>LibraryManagementApplication</name>
+    <description>Demo project for Spring Boot with Library Management Application</description>
 
     <properties>
         <java.version>17</java.version>

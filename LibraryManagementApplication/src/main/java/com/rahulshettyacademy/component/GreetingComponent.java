@@ -1,8 +1,8 @@
-package com.rahulshettyacademy.controller;
+package com.rahulshettyacademy.component;
 
 import org.springframework.stereotype.Component;
 @Component
-public class Greeting {
+public class GreetingComponent {
 	
 private  long id;
 private String content;

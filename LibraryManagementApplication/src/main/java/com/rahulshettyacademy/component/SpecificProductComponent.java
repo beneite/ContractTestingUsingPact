@@ -1,15 +1,16 @@
-package com.rahulshettyacademy.controller;
+package com.rahulshettyacademy.component;
 
+import com.rahulshettyacademy.entity.LibraryEntity;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @Component
-public class SpecificProduct {
+public class SpecificProductComponent {
 
 	
-	Library product;
+	LibraryEntity product;
 	@JsonInclude(Include.NON_NULL)
 	String msg;
 	
@@ -19,10 +20,10 @@ public class SpecificProduct {
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-	public Library getProduct() {
+	public LibraryEntity getProduct() {
 		return product;
 	}
-	public void setProduct(Library product) {
+	public void setProduct(LibraryEntity product) {
 		this.product = product;
 	}
 	public int getPrice() {

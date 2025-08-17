@@ -1,9 +1,9 @@
-package com.rahulshettyacademy.controller;
+package com.rahulshettyacademy.component;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class AllCourseDetails {
+public class AllCourseDetailsComponent {
 
 	private  int price;
 	public int getPrice() {
