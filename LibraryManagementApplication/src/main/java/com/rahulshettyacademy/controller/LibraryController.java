@@ -55,7 +55,7 @@ public class LibraryController {
 //	SpecificProduct specificProduct;
 	
 
-	String baseUrl ="http://localhost:8181";
+	String baseUrl ="http://localhost:8002";
 	
 	private static final Logger logger=  LoggerFactory.getLogger(LibraryController.class);
 	
@@ -166,11 +166,6 @@ public class LibraryController {
 	
 		}
 		return specificProductComponent;
-		
-
-		
-		
-		
 	}
 	
 	
@@ -197,9 +192,7 @@ public class LibraryController {
 	}
 	
 	public AllCourseDetailsComponent[] getAllCoursesDetails() throws JsonMappingException, JsonProcessingException
-	
 	{
-		
 		TestRestTemplate restTemplate =new TestRestTemplate();
 		
 		ResponseEntity<String>	response =restTemplate.getForEntity(baseUrl+"/allCourseDetails", String.class);
@@ -207,9 +200,6 @@ public class LibraryController {
 	
 		AllCourseDetailsComponent[] allCourseDetailComponents = mapper.readValue(response.getBody(), AllCourseDetailsComponent[].class);
 		return allCourseDetailComponents;
-
-		
-		
 	}
 	
 }
